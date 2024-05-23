@@ -47,7 +47,7 @@ class Position
   def to_cell_ref
     return '盤面外' if out_of_board?
 
-    "#{COL[col]}#{ROW[row]}"
+    "#{COL[row]}#{ROW[col]}"
   end
 
   def next_position(direction)
