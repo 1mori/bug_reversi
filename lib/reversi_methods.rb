@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'debug'
 require_relative './position'
 
 module ReversiMethods
@@ -12,8 +13,8 @@ module ReversiMethods
     board = Array.new(8) { Array.new(8, BLANK_CELL) }
     board[3][3] = WHITE_STONE # d4
     board[4][4] = WHITE_STONE # e5
-    board[3][4] = BLACK_STONE # d5
-    board[4][3] = BLACK_STONE # e4
+    board[4][3] = BLACK_STONE # d5
+    board[3][4] = BLACK_STONE # e4
     board
   end
 
